@@ -1,4 +1,4 @@
-
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/login";
 import Dashboard from "./components/Dashboard";
@@ -6,6 +6,8 @@ import ForgotPass from "./components/Forgot";
 import Signup from "./components/Signup";
 
 function App() {
+  console.log("App.js Loaded!"); // ✅ Debug point
+  
   return (
     <Router>
       <Routes>
@@ -19,3 +21,5 @@ function App() {
 }
 
 export default App;
+
+
